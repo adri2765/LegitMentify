@@ -13,7 +13,7 @@ public class Calendar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo);
+        setContentView(R.layout.activity_calendar);
 
         button=(Button)findViewById(R.id.moodbutton);
         button.setOnClickListener(new OnClickListener(){

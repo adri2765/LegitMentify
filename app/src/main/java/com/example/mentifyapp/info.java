@@ -13,7 +13,7 @@ public class info extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo);
+        setContentView(R.layout.activity_info);
 
         button=(Button)findViewById(R.id.calendarbutton);
         button.setOnClickListener(new OnClickListener(){

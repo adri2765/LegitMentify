@@ -22,16 +22,7 @@ public class mood extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo);
-        Toolbar toolbar=(Toolbar) findViewById(R.id.Toolbar);
-        setSupportActionBar(toolbar);
-
-        moodim=new Integer[]{R.drawable.happy,R.drawable.meh,R.drawable.sad};
-
-        spinner=(Spinner)findViewById(R.id.moodspin);
-
-        MyAdapterSpinner adapter=new MyAdapterSpinner(getApplicationContext(),R.layout.item_custom,moodim);
-        spinner.setAdapter(adapter);
+        setContentView(R.layout.activity_mood);
 
         button=(Button)findViewById(R.id.calendarbutton);
         button.setOnClickListener(new OnClickListener(){
@@ -78,31 +69,6 @@ public class mood extends AppCompatActivity {
         Intent intent=new Intent(this,homepage.class);
         startActivity(intent);
     }
-    protected class MyAdapterSpinner extends ArrayAdapter {
-        Integer[] Image;
 
-        public MyAdapterSpinner(Context context, int resource, Integer[]image){
-            super(context,resource);
-            Image=image;
-        }
-        public View GetCustomView(int position, View convertView, ViewGroup parent)
-        {
-            LayoutInflater inflater=getLayoutInflater();
-            View view=inflater.inflate(R.layout.item_custom,parent,false);
-
-            ImageView img=(ImageView)view.findViewById(R.id.imageView);
-            img.setImageResource(Image[position]);
-
-            return view;
-        }
-        @Override
-        public View getDropDownView(int position, View convertView,ViewGroup parent) {
-            return getCustomView(position, convertView, parent);
-        }
-        @Override
-        public View getView(int position, View convertViewGroup parent){
-            return getCustomView(position,convertView,parent);
-        }
-    }
 
 }
