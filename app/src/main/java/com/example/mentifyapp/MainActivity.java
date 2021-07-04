@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View v){
+
                 openHome();
             }
         });
