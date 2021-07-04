@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homepage"
     android:background="#FFFEF2"
-    >
+    tools:context=".info">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="416dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="675dp"
+        android:layout_width="413dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="670dp"
         android:background="#FFE4CF"
         android:text="  "
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,13 +149,13 @@
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="279dp"
-        android:layout_height="526dp"
+        android:id="@+id/imageView3"
+        android:layout_width="302dp"
+        android:layout_height="492dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/homecheat" />
+        app:srcCompat="@drawable/infocheat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

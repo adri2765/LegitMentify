@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homepage"
     android:background="#FFFEF2"
-    >
+    tools:context=".mood">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="416dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="675dp"
+        android:layout_width="413dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="670dp"
         android:background="#FFE4CF"
         android:text="  "
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,13 +149,26 @@
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="279dp"
-        android:layout_height="526dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:id="@+id/imageView4"
+        android:layout_width="377dp"
+        android:layout_height="537dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/homecheat" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/moodcheat" />
+
+    <Spinner
+        android:id="@+id/moodspin"
+        android:layout_width="90dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
